@@ -1,0 +1,31 @@
+.App {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  .app-calculator-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    width: 200px;
+    height: 200px;
+
+    .app-calculator-buttons {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      border: 2px solid black;
+
+      .app-calculator-button-row {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+
+      }
+    }
+  }
+}
