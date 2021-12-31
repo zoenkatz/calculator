@@ -14,7 +14,7 @@ function App() {
   const [sumState, setSumState] = useState({
     sumToCalc: 0,
     sumToShow: 0
-  })
+  });
 
   const onClickCalcButton = useCallback(
       (e) => {
@@ -32,7 +32,7 @@ function App() {
           case "+":
             break;
           default:
-            setSumState({...sumState, sumToCalc: sumState.sumToCalc + Number(targetValue)});
+            setSumState({...sumState, sumToCalc: sumState.sumToCalc + Number(targetValue), sumToShow: Number(targetValue)});
         }
       },
       [sumState, sumState && sumState.sumToCalc]
